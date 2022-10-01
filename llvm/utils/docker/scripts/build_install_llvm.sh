@@ -78,6 +78,7 @@ pushd "$CLANG_BUILD_DIR/build"
 
 # Run the build as specified in the build arguments.
 echo "Running build"
+set -x
 cmake -GNinja \
   -DCMAKE_INSTALL_PREFIX="$CLANG_INSTALL_DIR" \
   $CMAKE_ARGS \
